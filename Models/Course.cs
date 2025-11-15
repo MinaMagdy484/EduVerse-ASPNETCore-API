@@ -16,5 +16,7 @@
         public List<CourseInstructor> CourseInstructors { get; set; }=new List<CourseInstructor>();
         public List<CourseStudent> CourseStudents { get; set; } = new List<CourseStudent>();    
         public HashSet<Exam> Exams { get; set; } = new HashSet<Exam>();
+        public List<CourseReview> CourseReviews { get; set; }
+
     }
 }

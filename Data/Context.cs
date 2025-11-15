@@ -16,7 +16,7 @@ namespace ExaminationSystem.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-    
+
             foreach (var entityType in modelBuilder.Model.GetEntityTypes())
             {
                 foreach (var foreignKey in entityType.GetForeignKeys())
@@ -47,10 +47,18 @@ namespace ExaminationSystem.Data
             modelBuilder.ApplyConfiguration(new QuestionConfiguration());
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
             modelBuilder.ApplyConfiguration(new ExamAnswerConfiguration());
-            modelBuilder.ApplyConfiguration(new ExamStudentConfiguration());  // Add this line
+            modelBuilder.ApplyConfiguration(new AssignmentConfiguration());
+            modelBuilder.ApplyConfiguration(new AssignmentAllowedExtensionConfiguration());
+            modelBuilder.ApplyConfiguration(new AssignmentSubmissionConfiguration());
+            modelBuilder.ApplyConfiguration(new AttachmentConfiguration());
+            modelBuilder.ApplyConfiguration(new TimeLineItemConfiguration());
+            modelBuilder.ApplyConfiguration(new CommentConfiguration());  
+            modelBuilder.ApplyConfiguration(new PostConfiguration());   
+            modelBuilder.ApplyConfiguration(new ExamStudentConfiguration());  
+            modelBuilder.ApplyConfiguration(new CourseReviewConfiguration());
+
         }
 
-        // Add ExamStudent DbSet if not already present
         public DbSet<ExamStudent> ExamStudents { get; set; }
         public DbSet<ExamAnswer> ExamAnswers { get; set; }
         public DbSet<Choice> Choices { get; set; }
@@ -63,5 +71,15 @@ namespace ExaminationSystem.Data
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<Question> Questions { get; set; }
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<Assignment> Assignments { get; set; }
+        public DbSet<AssignmentAllowedExtension> AssignmentAllowedExtensions { get; set; }
+        public DbSet<AssignmentSubmission> AssignmentSubmissions { get; set; }
+        public DbSet<Attachment> Attachments { get; set; }
+        public DbSet<TimeLineItem> TimeLineItems { get; set; }
+        public DbSet<Comment> Comments { get; set; }     
+        public DbSet<Post> Posts { get; set; }     
+        public DbSet<CourseReview> CourseReviews { get; set; }
+
     }
 }

@@ -17,5 +17,6 @@ namespace ExaminationSystem.Models
 
         public List<CourseStudent> CourseStudents { get; set; }
         public List<ExamStudent> ExamStudents { get; set; }
+        public List<CourseReview> CourseReviews { get; set; }
     }
 }

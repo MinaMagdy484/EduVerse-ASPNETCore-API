@@ -13,6 +13,8 @@ namespace ExaminationSystem.Models
         public Gender Gender { get; set; }
         public bool IsDeleted { get; set; }
 
+        public string? Embeddings { get; set; }
+        public string? ImageURL { get; set; }
         public List<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
     }
 }
