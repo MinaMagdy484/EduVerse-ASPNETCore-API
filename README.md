@@ -309,7 +309,7 @@ Authorization: Bearer YOUR_JWT_TOKEN
 
 ## 📧 Contact
 
-**Project Link:** [https://github.com/MinaMagdy484/EduVerseWebAPI](https://github.com/MinaMagdy484/EduVerseWebAPI)
+**Project Link:** [[https://github.com/MinaMagdy484/EduVerseWebAPI](https://github.com/MinaMagdy484/EduVerse-ASPNETCore-API)]([https://github.com/MinaMagdy484/EduVerseWebAPI](https://github.com/MinaMagdy484/EduVerse-ASPNETCore-API))
 
 ---
 
